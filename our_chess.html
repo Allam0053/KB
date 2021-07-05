@@ -17,31 +17,38 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row mt-4 justify-content-center">
-      <div class="col-lg-7 col-md-7 col-sm-8 mt-5">
-        <div class="menu float-center justify-content-center" id="difficulty" style="justify-content: center;"> 
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row mt-4 justify-content-center">
+        <div class="col-lg-7 col-md-7 col-sm-8 mt-5">
+          <div class="menu float-center justify-content-center" id="difficulty" style="justify-content: center;"> 
+            <br>
+            <h1>Select Difficulty:</h1>
+            <hr><br>
+            <button type="button" class="btn easy btn-success btn-xlarge">Easy</button>
+            <br><br>
+            <button type="button" class="btn medium btn-warning btn-xlarge">Medium</button>
+            <br><br>
+            <button type="button" class="btn hard btn-danger btn-xlarge">Hard</button>
+            <br><br>
+            
+          </div>
+          <div id="board" style="width: 600px" ></div>
           <br>
-          <h1>Select Difficulty:</h1>
-          <hr><br>
-          <button type="button" class="btn easy btn-success btn-xlarge">Easy</button>
-          <br><br>
-          <button type="button" class="btn medium btn-warning btn-xlarge">Medium</button>
-          <br><br>
-          <button type="button" class="btn hard btn-danger btn-xlarge">Hard</button>
-          <br><br>
+          <div id="gameover" class="alert alert-primary hide" role="alert"><strong></strong></div>
+          <br>
+          <button type="button" class="btn bots-both btn-info btn-xlarge">Bots Both</button>
+          <button type="button" class="btn bots btn-info btn-xlarge">Bots White</button>
+          <button type="button" class="btn bots-black btn-dark btn-xlarge">Bots Black</button>
+          <button type="button" class="btn suggest btn-success btn-xlarge">Suggest</button>
+          <button type="button" class="btn undo btn-danger btn-xlarge">Undo</button>
+          <div id="restart" class="restartGame mt-2">
+            <button type="button" class="btn medium btn-danger btn-xlarge">Restart</button>		
+          </div>
+          <h4 id="suggested" class="text-success"></h4>
+          <h4 id="score" class="text-success"></h4>
           
         </div>
-        <div id="board" style="width: 600px" ></div>
-        <br>
-        <div id="gameover" class="alert alert-primary hide" role="alert"><strong></strong></div>
-        <br>
-        <button type="button" class="btn bots btn-danger btn-xlarge">Bots</button>
-	<button type="button" class="btn undo btn-danger btn-xlarge">Undo</button>
-        <div id="restart" class="restartGame">
-          <button type="button" class="btn medium btn-danger btn-xlarge">Restart</button>		
-        </div>
-        
       </div>
     </div>
   </div>
